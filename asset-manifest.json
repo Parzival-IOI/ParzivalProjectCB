@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/.github.io/ParzivalProjectCB/static/css/main.7181555f.css",
+    "main.js": "/.github.io/ParzivalProjectCB/static/js/main.a0dd5f71.js",
+    "index.html": "/.github.io/ParzivalProjectCB/index.html",
+    "main.7181555f.css.map": "/.github.io/ParzivalProjectCB/static/css/main.7181555f.css.map",
+    "main.a0dd5f71.js.map": "/.github.io/ParzivalProjectCB/static/js/main.a0dd5f71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7181555f.css",
+    "static/js/main.a0dd5f71.js"
+  ]
+}
