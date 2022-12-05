@@ -1,0 +1,41 @@
+.top {
+    width: 100%;
+    height: 22.7vw;
+    position: relative;
+    z-index: 1;
+}
+.toppic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 23, 23, 0.59);
+    z-index: 3;
+}
+.toppictext {
+    color: rgb(255, 255, 255);
+    width: 50%;
+    font-size: 2vw;
+    font-weight: 400;
+    position: absolute;
+    z-index: 4;
+    font-family: "Hanuman", serif;
+    top: 54%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+@media (max-width: 991.98px) {
+    .top {
+        height: 65vw;
+    }
+    .toppictext {
+        font-size: 1rem;
+    }
+}

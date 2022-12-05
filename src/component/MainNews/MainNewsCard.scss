@@ -1,0 +1,193 @@
+.control {
+    width: 100%;
+    display: flex;
+    margin: 8vw 0 4vw 0;
+    .name {
+        width: 50%;
+        margin: 0 0 0 3vw;
+        font-size: 2.3vw;
+        font-weight: 600;
+    }
+    span {
+        margin: 0 3vw 0 auto;
+        a{
+            background-color: red;
+            padding: 0.5vw 1vw;
+            border-radius: 0.5vw;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    }
+}
+.mainFirstContainer {
+    width: 95%;
+    height: 40vw;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-flow: row;
+    gap: 1vw;
+    .relative {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        &:first-child {
+            grid-row: 1 / span 2;
+        }
+        &:nth-child(2){
+            .wordContainer {
+                p {
+                    font-size: 1.1vw;
+                }
+                div {
+                    font-size: 1.2vw;
+                }
+            }
+        }
+        &:last-child {
+            .wordContainer {
+                p {
+                    font-size: 1.1vw;
+                }
+                div {
+                    font-size: 1.2vw;
+                }
+            }
+        }
+        .outterPicture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                transition: all 300ms;
+            }
+        }
+        .black {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.521);
+        }
+        .wordContainer {
+            width: 80%;
+            height: 57%;
+            position: absolute;
+            left: 4vw;
+            top: 50%;
+            overflow: hidden;
+            transform: translateY(-50%);
+            p {
+                position: relative;
+                max-width: 50%;
+                padding: 1vw 1vw 1vw 0;
+                font-weight: 700;
+                font-size: 1.4vw;
+                color: white;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 10%;
+                    height: 0.2vw;
+                    bottom: 0;
+                    left: 0;
+                    background-color: crimson;
+                }
+            }
+            div {
+                width: 80%;
+                height: 100%;
+                text-overflow: ellipsis;
+                font-size: 2vw;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+                &:hover {
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .outterPicture {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1020px) {
+    .control {
+        .name {
+            margin-left: 6%;
+            font-size: 1.3rem;
+        }
+        span {
+            margin-right: 10%;
+        }
+    }
+    .mainFirstContainer {
+        height: 30rem;
+        .relative {
+            &:first-child {
+                font-size: 1rem;
+                .wordContainer {
+                    p {
+                        font-size: inherit;
+                    }
+                    div {
+                        font-size: inherit;
+                    }
+                }
+            }
+            &:nth-child(2), &:last-child {
+                font-size: 0.8rem;
+                .wordContainer {
+                    p {
+                        font-size: inherit;
+                    }
+                    div {
+                        font-size: inherit;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+@media (max-width: 770px) {
+    .mainFirstContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 90%;
+        height: 45rem;
+        .relative {
+            &:first-child {
+                grid-row: 1/ span 1;
+            }
+            &:nth-child(-n+3) {
+                .wordContainer {
+                    font-size: 1rem;
+                    p {
+                        font-size: inherit;
+                    }
+                    div {
+                        font-size: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+

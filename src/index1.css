@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap");
+body {
+    margin: 0;
+    min-height: 120vh;
+    font-family: "Hanuman", serif;
+    
+}
+.block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+    width: 90%;
+    height: 25vw;
+    margin: 5vw;
+}
+.block a {
+    text-decoration: none;
+    color: rgb(33, 37, 61);
+}
+.cover {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 0.2vw 0.2vw 0.8vw 0.8vw;
+    box-shadow: 0 0.5vw 1vw  rgb(118, 118, 118);
+}
+.wrapper {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    margin: 0;
+    object-fit: contain;
+    background-color: white;
+}
+.imgblock {
+    object-fit: cover;
+}
+.pblock {
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.pblock p {
+    background-color: rgb(70, 237, 84);
+    font-size: 0.8vw;
+    padding: 0.3vw 0.4vw 0.1vw 0.4vw;
+    margin: 0.5vw 0 0 1vw;
+    border-radius: 0.2vw;
+}
+.h2block {
+    height: 13.5%;
+    font-size: 1.2vw;
+    margin: 0.5vw 0 0 0;
+    padding: 0 1vw;
+    overflow: hidden;
+}
+.profileblock {
+    height: 18%;
+    width: 90%;
+    margin: 0.8vw auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 0.9vw;
+}
+.profileblock img {
+    height: 4vw;
+    width: 4vw;
+    grid-row: 1 / span 3;
+    margin: auto auto;
+    border-radius: 50%;
+    font-size: 1vw;
+}
+.profileblock h4 {
+    margin: 0;
+    font-weight: 600;
+}
+.profileblock p {
+    margin: 0;
+    font-size: 0.9vw;
+    font-weight: 300;
+}
+.profileblock h6 {
+    margin: 0;
+    font-weight: 500;
+}
+.block:hover .cover a .wrapper img{
+    transform: scale(1.1);
+}

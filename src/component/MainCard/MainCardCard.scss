@@ -1,0 +1,131 @@
+.cover {
+    width: 32.33333%;
+    height: 28vw;
+    overflow: hidden;
+    background-color: whitesmoke;
+    border-radius: 0.2vw 0.2vw 0.8vw 0.8vw;
+    box-shadow: 0 0.5vw 0.5vw rgb(137, 134, 134);
+    a {
+        text-decoration: none;
+        color: rgb(33, 37, 61);
+        .wrapper {
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+            margin: 0;
+            object-fit: contain;
+            background-color: white;
+            .imgblock {
+                object-fit: cover;
+                transform: scale(1);
+                transition: all 200ms ease-out;
+            }
+        }
+        .pblock {
+            margin: 1vw 0 0 0;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            p {
+                background-color: rgb(70, 237, 84);
+                font-size: 0.8vw;
+                padding: 0.3vw 0.4vw 0.1vw 0.4vw;
+                margin: 0.5vw 0 0 1vw;
+                border-radius: 0.2vw;
+            }
+        }
+        .h2block {
+            width: 93%;
+            height: 12%;
+            font-size: 1.2vw;
+            margin: 0.5vw 0 0 1vw;
+            padding: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 1s ease-in-out;
+            &:hover {
+                text-decoration-line: underline;
+            }
+        }
+        .profileblock {
+            height: 18%;
+            width: 90%;
+            margin: 1.2vw auto 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 5fr;
+            grid-template-rows: repeat(3, 1fr);
+            column-gap: 0.9vw;
+            img {
+                height: 4vw;
+                width: 4vw;
+                grid-row: 1 / span 3;
+                margin: auto auto;
+                border-radius: 50%;
+            }
+            h4 {
+                font-size: 1vw;
+                margin: 0;
+                font-weight: 600;
+            }
+            p {
+                margin: 0;
+                font-size: 0.9vw;
+                font-weight: 300;
+            }
+            h6 {
+                font-size: 1vw;
+                margin: 0;
+                font-weight: 500;
+            }
+        }
+    }
+    &:hover {
+        a {
+            .wrapper {
+                .imgblock {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .cover {
+        height: 20rem;
+        a {
+            .pblock {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+            .h2block {
+                font-size: 1rem;
+                height: 14.5%;
+
+            }
+            .profileblock {
+                grid-template-columns: 1fr 3fr;
+                img {
+                    width: 2.5rem;
+                    height: 2.5rem;
+                }
+                h4 {
+                    font-size: 0.8rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                }
+                h6 {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+        
+    }
+}
+@media (max-width: 767.98px) {
+    .cover {
+        scroll-snap-align: start;
+    }
+}
+// @media (max-width: 575.98px) { ... }

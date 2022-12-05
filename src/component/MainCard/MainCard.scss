@@ -1,0 +1,90 @@
+.mainWrap {
+    width: 95%;
+    height: 30vw;
+    margin: 8vw auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    .mainTitle {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+        p {
+            color: rgb(25, 32, 55);
+            font-size: 2vw;
+            font-weight: 600;
+            position: relative;
+            padding: 0 0 2vw 0;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 4vw;
+                height: 0.2vw;
+                background-color: rgb(25, 32, 55);
+            }
+        }
+        a {
+            font-size: 1.2vw;
+            font-weight: 400;
+            padding: 0.8vw 1.8vw 0.6vw 1.8vw;
+            text-decoration: none;
+            color: rgb(25, 32, 55);
+            border: 0.2vw solid rgb(25, 32, 55);
+        }
+    }
+    .mainCardWrapper {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        .mainCardWrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    .mainWrap {
+        height: 26rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+        .mainTitle {
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                font-size: 1rem;
+            }
+            a {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .mainWrap {
+        .mainCardWrapper {
+            overflow-x: auto;
+            .mainCardWrap {
+                scroll-snap-type: x mandatory;
+                width: 150%;
+            }
+        }
+    }
+}
+@media (max-width: 575.98px) {
+    .mainWrap {
+        .mainCardWrapper {
+            .mainCardWrap {
+                width: 300%;
+            }
+        }
+    }
+}

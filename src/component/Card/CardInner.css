@@ -1,0 +1,124 @@
+.cover {
+  width: 32.33333%;
+  height: 28vw;
+  overflow: hidden;
+  background-color: whitesmoke;
+  border-radius: 0.2vw 0.2vw 0.8vw 0.8vw;
+  box-shadow: 0 0.5vw 1vw rgb(137, 134, 134);
+}
+.cover a {
+  text-decoration: none;
+  color: rgb(33, 37, 61);
+}
+.cover a .wrapper {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  margin: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: white;
+}
+.cover a .wrapper .imgblock {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: all 200ms ease-out;
+}
+.cover a .pblock {
+  margin: 1vw 0 0 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cover a .pblock p {
+  background-color: rgb(70, 237, 84);
+  font-size: 0.8vw;
+  padding: 0.3vw 0.4vw 0.1vw 0.4vw;
+  margin: 0.5vw 0 0 1vw;
+  border-radius: 0.2vw;
+}
+.cover a .h2block {
+  width: 93%;
+  height: 12%;
+  font-size: 1.2vw;
+  margin: 0.5vw 0 0 1vw;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 1s ease-in-out;
+}
+.cover a .h2block:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.cover a .profileblock {
+  height: 18%;
+  width: 90%;
+  margin: 1.2vw auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: repeat(3, 1fr);
+  -moz-column-gap: 0.9vw;
+       column-gap: 0.9vw;
+}
+.cover a .profileblock img {
+  height: 4vw;
+  width: 4vw;
+  grid-row: 1/span 3;
+  margin: auto auto;
+  border-radius: 50%;
+}
+.cover a .profileblock h4 {
+  font-size: 1vw;
+  margin: 0;
+  font-weight: 600;
+}
+.cover a .profileblock p {
+  margin: 0;
+  font-size: 0.9vw;
+  font-weight: 300;
+}
+.cover a .profileblock h6 {
+  font-size: 1vw;
+  margin: 0;
+  font-weight: 500;
+}
+.cover:hover a .wrapper .imgblock {
+  transform: scale(1.1);
+}
+
+@media (max-width: 991.98px) {
+  .cover {
+    border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
+    width: 600px;
+    height: 350px;
+    box-shadow: 0 0.5rem 1rem rgb(137, 134, 134);
+  }
+  .cover a .pblock {
+    margin-left: 1rem;
+  }
+  .cover a .pblock p {
+    font-size: 0.6rem;
+  }
+  .cover a .h2block {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+  .cover a .profileblock {
+    font-size: 0.6rem;
+  }
+  .cover a .profileblock img {
+    width: 3rem;
+    height: 3rem;
+  }
+  .cover a .profileblock h4 {
+    font-size: inherit;
+  }
+  .cover a .profileblock p {
+    font-size: inherit;
+  }
+  .cover a .profileblock h6 {
+    font-size: inherit;
+  }
+}/*# sourceMappingURL=CardInner.css.map */

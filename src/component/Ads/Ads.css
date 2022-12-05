@@ -1,0 +1,91 @@
+.Ads {
+    font-family: inherit;
+    width: 95%;
+    height: auto;
+    display: flex;
+    justify-content: flex start;
+    align-items: center;
+    gap: 1vw;
+    margin: 4vw auto;
+}
+.Ads .slogen {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(23, 23, 46);
+
+}
+.Ads .slogen h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 1.8vw;
+    width: 92%;
+    word-wrap: break-word;
+    text-align: left;
+    padding: 0 0 1.8vw 0;
+}
+.Ads .slogen h3::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    height: 1.5%;
+    background-color: rgb(23, 23, 46);
+}
+.Ads a {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 1vw;
+    background-color: red;
+    overflow: hidden;
+}
+.Ads a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 991.98px) {
+    .Ads {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: row;
+        gap: 3rem;
+    }
+    .Ads a {
+        width: 100%;
+        height: 100%;
+    }
+    .Ads .slogen h3 {
+        font-size: 1.4rem;
+        width: 90%;
+        margin: auto;
+    }
+    .Ads .slogen {
+        width: 100%;
+        height: 100%;
+    }
+    .Ads .slogen h3::before {
+        width: 25%;
+        height: 0.1rem;
+    }
+}
+@media (max-width: 687px) {
+    .Ads {
+        width: 80%;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+    .Ads .slogen h3 {
+        margin:2rem 0 2rem 0;
+    }
+    .Ads .slogen h3::before {
+        width: 15%;
+    }
+}

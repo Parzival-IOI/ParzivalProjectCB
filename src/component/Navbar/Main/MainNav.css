@@ -1,0 +1,159 @@
+.MainNav {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.MainNav .MainNavImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.MainNav .blocker {
+  background-color: rgba(0, 0, 0, 0.516);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+.MainNav .blocker a {
+  width: 45%;
+  height: auto;
+  margin: 0 auto 0 5vw;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.MainNav .blocker a h2 {
+  font-size: 3vw;
+  font-weight: 800;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.MainNav .blocker a p {
+  font-size: 1.2vw;
+  width: 100%;
+}
+.MainNav .blocker .buttonMain {
+  margin-top: 2vw;
+  width: 26%;
+  height: 3.5vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1vw;
+}
+.MainNav .blocker .buttonMain a {
+  text-decoration: none;
+  font-size: 1.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MainNav .blocker .buttonMain a:first-child {
+  width: 100%;
+  height: 100%;
+  border: 0.1vw solid white;
+  background-color: white;
+  color: rgb(13, 13, 24);
+  transition: all 0.8s ease-out;
+  font-size: 300;
+}
+.MainNav .blocker .buttonMain a:first-child:hover {
+  color: white;
+  background-color: transparent;
+}
+.MainNav .blocker .buttonMain a:last-child {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.405);
+  color: white;
+  font-weight: 400;
+  transition: all 0.8s ease-out;
+}
+.MainNav .blocker .buttonMain a:last-child:hover {
+  background-color: rgb(255, 2, 31);
+}
+.MainNav .animateProgress {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 3rem;
+  width: 20rem;
+  height: 0.13rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.MainNav .animateProgress .progress {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+.MainNav .animateProgress .progress.active::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-animation: Bar 5s cubic-bezier(1, 1, 0, 0);
+          animation: Bar 5s cubic-bezier(1, 1, 0, 0);
+  background-color: white;
+  height: 100%;
+}
+
+@-webkit-keyframes Bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes Bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@media (max-width: 991.98px) {
+  .MainNav .blocker a {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 0 5vw;
+  }
+  .MainNav .blocker a h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+  }
+  .MainNav .blocker a p {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+  .MainNav .blocker .buttonMain {
+    width: 18rem;
+    height: 2.5rem;
+    gap: 1rem;
+  }
+  .MainNav .blocker .buttonMain a {
+    font-size: 1rem;
+  }
+  .MainNav .animateProgress {
+    width: 14rem;
+  }
+}/*# sourceMappingURL=MainNav.css.map */
