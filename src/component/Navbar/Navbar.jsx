@@ -115,7 +115,7 @@ function Navbar() {
                 )}
             </div>
             {mobileCondition && <MobileNav onClick={Mobile}/>}
-            <Link to="/Search" className="search" onClick={`${mobileCondition ? Mobile : null}`}>
+            <Link to="/search" className="search" onClick={`${mobileCondition ? Mobile : null}`}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
