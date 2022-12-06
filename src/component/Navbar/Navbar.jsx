@@ -19,6 +19,12 @@ function Navbar() {
         setMobileCondition(b => !b);
     }
 
+    if(mobileCondition) {
+        document.body.style.overflow='hidden';
+    }else {
+        document.body.style.overflow='scroll';
+    }
+
     function CLASSNAME () {
         if(ScrollPosition<=50) {
             return 'Nav';
@@ -38,7 +44,7 @@ function Navbar() {
         <nav
             className={CLASSNAME()}
         >
-            <Link to="/ParzivalProjectCB" className="logo">
+            <Link to="/ParzivalProjectCB" className="logo" onClick={`${mobileCondition ? Mobile : null}`}>
                 <div></div>
             </Link>
             {Nav.map((item) => {
@@ -108,8 +114,8 @@ function Navbar() {
                     </svg>
                 )}
             </div>
-            {mobileCondition && <MobileNav />}
-            <Link to="/Search" className="search">
+            {mobileCondition && <MobileNav onClick={Mobile}/>}
+            <Link to="/Search" className="search" onClick={`${mobileCondition ? Mobile : null}`}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
