@@ -17,18 +17,8 @@ function Navbar() {
 
     function Mobile() {
         setMobileCondition(b => !b);
-        // console.log(`hello`);
     }
-    // console.log(ScrollPosition, prev.current);
 
-    // const Top = () => {
-    //   if((ScrollPosition) > prev.current) return true;
-    //   else if (ScrollPosition < prev.current) return false;
-    // }
-    // const Setting = () => {
-    //   if(ScrollPosition === 0) return true;
-    //   else return false;
-    // }
     function CLASSNAME () {
         if(ScrollPosition<=50) {
             return 'Nav';
@@ -41,7 +31,7 @@ function Navbar() {
                 return 'Nav active top-0';
             }
         }
-        return
+        return 'Nav';
     }
 // `Nav ${ScrollPosition > prev.current ? "top-50" : "top-0"}`id={`${ScrollPosition <= 0 ? "" : "active"}`}
     return (

@@ -1,8 +1,8 @@
 .hellno {
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     position: fixed;
-    top: -25vh;
+    top: 0vh;
     left: 0;
     background-color: rgba(15, 13, 23, 0.801);
     display: flex;
