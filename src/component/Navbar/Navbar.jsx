@@ -30,7 +30,7 @@ function Navbar() {
     //   else return false;
     // }
     function CLASSNAME () {
-        if(ScrollPosition<50) {
+        if(ScrollPosition<=50) {
             return 'Nav';
         }
         else if(ScrollPosition>50) {

@@ -11,7 +11,9 @@
   align-items: center;
   z-index: 1000;
   background-color: transparent;
-  transition: top 800ms ease-in-out;
+  transition: top 2s ease-in-out;
+  transition: background-color 1s;
+  transition: color 1s;
   box-shadow: none;
 }
 .Nav .logo {
@@ -54,7 +56,7 @@
   height: 10%;
   bottom: 0;
   right: 0;
-  background-color: rgb(76, 72, 72);
+  background-color: rgb(139, 139, 139);
   border-radius: 0 1vw 1vw 0;
   transition: all 400ms ease-out;
 }
@@ -151,18 +153,33 @@
   color: white;
 }
 .Nav .search:hover {
-  color: rgb(255, 13, 150);
+  color: rgb(155, 0, 194);
 }
 .Nav.active {
   background-color: whitesmoke;
   color: rgb(37, 37, 67);
   box-shadow: 0 0 0.5vw 0.5vw gray;
+  transition: top 2s ease-in-out;
 }
 .Nav.active.top-0 {
-  top: 0;
+  -webkit-animation-name: Top0;
+          animation-name: Top0;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 .Nav.active.top-50 {
-  top: -30vw;
+  -webkit-animation-name: Top50;
+          animation-name: Top50;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
 }
 .Nav.active .ang {
   color: inherit;
@@ -210,5 +227,37 @@
   .Nav .search {
     width: 25px;
     height: 25px;
+  }
+}
+@-webkit-keyframes Top0 {
+  0% {
+    top: -30vw;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes Top0 {
+  0% {
+    top: -30vw;
+  }
+  100% {
+    top: 0;
+  }
+}
+@-webkit-keyframes Top50 {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -30vw;
+  }
+}
+@keyframes Top50 {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -30vw;
   }
 }/*# sourceMappingURL=Navbar.css.map */
