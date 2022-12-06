@@ -29,12 +29,24 @@ function Navbar() {
     //   if(ScrollPosition === 0) return true;
     //   else return false;
     // }
-
+    function CLASSNAME () {
+        if(ScrollPosition<50) {
+            return 'Nav';
+        }
+        else if(ScrollPosition>50) {
+            if(ScrollPosition > prev.current) {
+                return 'Nav active top-50';
+            }
+            else if (ScrollPosition < prev.current) {
+                return 'Nav active top-0';
+            }
+        }
+        return
+    }
+// `Nav ${ScrollPosition > prev.current ? "top-50" : "top-0"}`id={`${ScrollPosition <= 0 ? "" : "active"}`}
     return (
         <nav
-            className={`Nav ${ScrollPosition > prev.current ? "top-50" : "top-0"}`}
-            
-            id={`${ScrollPosition <= 0 ? "" : "active"}`}
+            className={CLASSNAME()}
         >
             <Link to="/ParzivalProjectCB" className="logo">
                 <div></div>
