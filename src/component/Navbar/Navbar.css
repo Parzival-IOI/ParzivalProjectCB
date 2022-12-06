@@ -174,8 +174,8 @@
 .Nav.active.top-50 {
   -webkit-animation-name: Top50;
           animation-name: Top50;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
