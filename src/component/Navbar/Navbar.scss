@@ -170,17 +170,18 @@
         transition: top 2s ease-in-out;
         // box-shadow: 0 0.2vw 1vw whitesmoke;
         &.top-0 {
-            animation-name: Top0;
-            animation-duration: 300ms;
-            animation-fill-mode: forwards;
-            animation-iteration-count: 1;
+            top: 0;
+            // animation-name: Top0;
+            // animation-duration: 300ms;
+            // animation-fill-mode: forwards;
+            // animation-iteration-count: 1;
         }
         &.top-50 {
-            animation-name: Top50;
-            animation-duration: 1.5s;
-            animation-fill-mode: forwards;
-            animation-iteration-count: 1;
-            // top: -30vw;
+            // animation-name: Top50;
+            // animation-duration: 1.5s;
+            // animation-fill-mode: forwards;
+            // animation-iteration-count: 1;
+            top: -30vw;
         }
 
         .ang {
@@ -233,19 +234,19 @@
         }
     }
 }
-@keyframes Top0{
-    0% {
-        top: -30vw;
-    }
-    100% {
-        top: 0;
-    }
-}
-@keyframes Top50{
-    0% {
-        top: 0;
-    }
-    100% {
-        top: -30vw;
-    }
-}
+// @keyframes Top0{
+//     0% {
+//         top: -30vw;
+//     }
+//     100% {
+//         top: 0;
+//     }
+// }
+// @keyframes Top50{
+//     0% {
+//         top: 0;
+//     }
+//     100% {
+//         top: -30vw;
+//     }
+// }

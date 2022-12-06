@@ -162,24 +162,10 @@
   transition: top 2s ease-in-out;
 }
 .Nav.active.top-0 {
-  -webkit-animation-name: Top0;
-          animation-name: Top0;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  top: 0;
 }
 .Nav.active.top-50 {
-  -webkit-animation-name: Top50;
-          animation-name: Top50;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  top: -30vw;
 }
 .Nav.active .ang {
   color: inherit;
@@ -227,37 +213,5 @@
   .Nav .search {
     width: 25px;
     height: 25px;
-  }
-}
-@-webkit-keyframes Top0 {
-  0% {
-    top: -30vw;
-  }
-  100% {
-    top: 0;
-  }
-}
-@keyframes Top0 {
-  0% {
-    top: -30vw;
-  }
-  100% {
-    top: 0;
-  }
-}
-@-webkit-keyframes Top50 {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -30vw;
-  }
-}
-@keyframes Top50 {
-  0% {
-    top: 0;
-  }
-  100% {
-    top: -30vw;
   }
 }/*# sourceMappingURL=Navbar.css.map */
