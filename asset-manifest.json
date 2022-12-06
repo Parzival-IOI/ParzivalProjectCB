@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/ParzivalProjectCB/static/css/main.3fa8044c.css",
-    "main.js": "/ParzivalProjectCB/static/js/main.6a5405c5.js",
+    "main.css": "/ParzivalProjectCB/static/css/main.5a808370.css",
+    "main.js": "/ParzivalProjectCB/static/js/main.49e4c29d.js",
     "index.html": "/ParzivalProjectCB/index.html",
-    "main.3fa8044c.css.map": "/ParzivalProjectCB/static/css/main.3fa8044c.css.map",
-    "main.6a5405c5.js.map": "/ParzivalProjectCB/static/js/main.6a5405c5.js.map"
+    "main.5a808370.css.map": "/ParzivalProjectCB/static/css/main.5a808370.css.map",
+    "main.49e4c29d.js.map": "/ParzivalProjectCB/static/js/main.49e4c29d.js.map"
   },
   "entrypoints": [
-    "static/css/main.3fa8044c.css",
-    "static/js/main.6a5405c5.js"
+    "static/css/main.5a808370.css",
+    "static/js/main.49e4c29d.js"
   ]
 }
