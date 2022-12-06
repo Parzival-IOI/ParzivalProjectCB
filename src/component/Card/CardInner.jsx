@@ -3,26 +3,26 @@ import './CardInner.css'
 
 const CardInner = ({item}) => {
   return (
-    <div className="cover">
+    <div className="covero" >
             <a href={item.id} >
-              <div className="wrapper">
+              <div className="wrappero">
                 <img
                   src={item.image}
                   alt="Card"
-                  className="imgblock"
+                  className="imgblocko"
                   width="100%"
                   height="100%"
                 />
               </div>
-              <div className="pblock">
+              <div className="pblocko">
                 <p>{item.part}</p>
               </div>
-              <h2 className="h2block">{item.title}</h2>
-              <div className="profileblock">
+              <h2 className="h2blocko">{item.title}</h2>
+              <div className="profileblocko">
                 <img src={item.profile} alt="Profile" />
-                <h4>{item.userName}</h4>
-                <p>{item.date}</p>
-                <h6>{item.view}</h6>
+                <h4 className='h4o'>{item.userName}</h4>
+                <p className='po'>{item.date}</p>
+                <h6 className='h6o'>{item.view}</h6>
               </div>
             </a>
           </div>

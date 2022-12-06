@@ -11,40 +11,13 @@
 }
 @media (max-width: 991.98px) {
     .block {
+        width: 90%;
+        column-gap: 4%;
         z-index: 20;
+    }
+}
+@media (max-width: 650px) {
+    .block {
         justify-content: center;
-        padding: 1rem;
-    }
-    .cover {
-        border-radius: 0.2rem 0.2rem 0.8rem 0.8rem;
-        width: 600px;
-        height: 350px;
-        box-shadow: 0 0.5rem 1rem rgb(137, 134, 134);
-    }
-    .cover a .pblock {
-        margin-left: 1rem;
-    }
-    .cover a .pblock p {
-        font-size: 0.6rem;
-    }
-    .cover a .h2block {
-        margin-left: 1rem;
-        font-size: 0.8rem;
-    }
-    .cover a .profileblock {
-        font-size: 0.6rem;
-    }
-    .cover a .profileblock img {
-        width: 3rem;
-        height: 3rem;
-    }
-    .cover a .profileblock h4 {
-        font-size: inherit;
-    }
-    .cover a .profileblock p {
-        font-size: inherit;
-    }
-    .cover a .profileblock h6 {
-        font-size: inherit;
     }
 }

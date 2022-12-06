@@ -32,12 +32,11 @@ function Navbar() {
 
     return (
         <nav
-            className={ScrollPosition === 0 ? "Nav" : "Nav active"}
-            style={
-                ScrollPosition > prev.current ? ({ top: "-50vw" }) : ({ top: "0" })
-            }
+            className={`Nav ${ScrollPosition > prev.current ? "top-50" : "top-0"}`}
+            
+            id={`${ScrollPosition <= 0 ? "" : "active"}`}
         >
-            <Link to="/" className="logo">
+            <Link to="/ParzivalProjectCB" className="logo">
                 <div></div>
             </Link>
             {Nav.map((item) => {

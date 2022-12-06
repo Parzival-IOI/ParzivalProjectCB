@@ -153,14 +153,19 @@
     .search {
         width: 1.5vw;
         height: 1.5vw;
-        margin-right: 2.2vw;
-        margin-left: 0.8vw;
+        margin: auto 2.2vw auto 0.8vw;
         color: white;
         &:hover {
             color: rgb(255, 13, 150);
         }
     }
-    &.active {
+    &.top-50 {
+        top: -30vw;
+    }
+    &.top-0 {
+        top: 0;
+    }
+    &#active {
         background-color: whitesmoke;
         color: rgb(37, 37, 67);
         box-shadow: 0 0 0.5vw 0.5vw gray;
