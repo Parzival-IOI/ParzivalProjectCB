@@ -13,11 +13,14 @@ import Main from "./pages/Main";
 import Exhibition from "./pages/exhibition";
 import Searching from "./pages/search";
 
+import Navbar from "./component/Navbar/Navbar";
+
+
 function App() {
     return (
         <div className="app">
             <Routes >
-                <Route path="/ParzivalProjectCB/">
+                <Route path="/ParzivalProjectCB/" element={<Navbar />}>
                     <Route index element={<Main />}></Route>
                     <Route path="News" element={<News />} />
                     <Route path="farming" element={<Farming />} />

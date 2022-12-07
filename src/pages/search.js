@@ -4,9 +4,9 @@ import Searching from "../component/Search/Searching";
 function Search () {
     
     return (
-        <div style={{'minHeight' : '120vh'}}>
+        <div>
             <TopPicture pic="https://business-cambodia.com/search.jpg" text="ស្វែងរកអត្ថបទដែលអ្នកចូលចិត្ត" />
-            <Searching></Searching>
+            <Searching/>
         </div>
     );
 }
