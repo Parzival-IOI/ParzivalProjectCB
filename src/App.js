@@ -17,9 +17,8 @@ function App() {
     return (
         <div className="app">
             <Routes >
-                <Route path="/">
+                <Route path="/ParzivalProjectCB/">
                     <Route index element={<Main />}></Route>
-                    <Route path="ParzivalProjectCB" element={<Main />} />
                     <Route path="News" element={<News />} />
                     <Route path="farming" element={<Farming />} />
                     <Route path="finance" element={<Finance />} />

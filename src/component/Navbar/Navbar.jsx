@@ -44,7 +44,7 @@ function Navbar() {
         <nav
             className={CLASSNAME()}
         >
-            <Link to="/ParzivalProjectCB" className="logo" onClick={`${mobileCondition ? Mobile : null}`}>
+            <Link to="/ParzivalProjectCB/" className="logo" onClick={`${mobileCondition ? Mobile : null}`}>
                 <div></div>
             </Link>
             {Nav.map((item) => {
@@ -115,7 +115,7 @@ function Navbar() {
                 )}
             </div>
             {mobileCondition && <MobileNav onClick={Mobile}/>}
-            <Link to="/search" className="search" onClick={`${mobileCondition ? Mobile : null}`}>
+            <Link to="/ParzivalProjectCB/search" className="search" onClick={`${mobileCondition ? Mobile : null}`}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

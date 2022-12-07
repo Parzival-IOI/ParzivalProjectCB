@@ -2,37 +2,37 @@ const Nav = [
     {
         id : 1,
         name : "ព័ត៌មានថ្មីៗ",
-        url : "/News",
+        url : "/ParzivalProjectCB/News",
         cName : "ang"
     },
     {
         id : 2,
         name : "ចាប់ផ្តើមអាជីវកម្ម",
-        url : "/startup",
+        url : "/ParzivalProjectCB/startup",
         cName : "ang"
     },
     {
         id : 3,
         name : "អចលនទ្រព្យ",
-        url : "/property",
+        url : "/ParzivalProjectCB/property",
         cName : "ang"
     },
     {
         id : 4,
         name : "ភាពជាអ្នកដឹកនាំ",
-        url : "/leadership",
+        url : "/ParzivalProjectCB/leadership",
         cName : "ang"
     },
     {
         id : 5,
         name : "ហិរញ្ញវត្ថុ",
-        url : "/finance",
+        url : "/ParzivalProjectCB/finance",
         cName : "ang"
     },
     {
         id : 6,
         name : "កំពូលអ្នកលក់ ",
-        url : "/firesale",
+        url : "/ParzivalProjectCB/firesale",
         cName : "ang"
     },
 ];
